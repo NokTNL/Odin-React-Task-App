@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Odin-Task-App/static/js/main.beb48cc2.js",
-    "index.html": "/Odin-Task-App/index.html",
-    "main.beb48cc2.js.map": "/Odin-Task-App/static/js/main.beb48cc2.js.map"
+    "main.js": "/Odin-React-Task-App/static/js/main.beb48cc2.js",
+    "index.html": "/Odin-React-Task-App/index.html",
+    "main.beb48cc2.js.map": "/Odin-React-Task-App/static/js/main.beb48cc2.js.map"
   },
   "entrypoints": [
     "static/js/main.beb48cc2.js"
