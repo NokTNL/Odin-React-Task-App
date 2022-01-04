@@ -15,16 +15,14 @@ const ResubmitForm = (props) => {
   };
 
   return (
-    <li>
-      <form onSubmit={onResubmit}>
-        <input
-          type="text"
-          defaultValue={props.initialContent}
-          onChange={onChangeContent}
-        />
-        <button>Resubmit task</button>
-      </form>
-    </li>
+    <form onSubmit={onResubmit}>
+      <input
+        type="text"
+        defaultValue={props.initialContent}
+        onChange={onChangeContent}
+      />
+      <button>✓</button>
+    </form>
   );
 };
 

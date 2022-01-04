@@ -1,7 +1,9 @@
 import { useState } from "react";
+import "../style/AddTaskForm.css";
 
 const AddTaskForm = (props) => {
   const [taskInput, setTaskInput] = useState("");
+
   const onChange = (event) => {
     setTaskInput(event.target.value);
   };
@@ -13,9 +15,17 @@ const AddTaskForm = (props) => {
   };
 
   return (
-    <form onSubmit={onAddTask}>
-      <input type="text" onChange={onChange} value={taskInput} />
-      <button>Add task!</button>
+    <form className="add-task-form" onSubmit={onAddTask}>
+      <h3>New Task</h3>
+      <div className="input-submit-container">
+        <input
+          type="text"
+          onChange={onChange}
+          placeholder="Add a new task..."
+          value={taskInput}
+        />
+        <button>＋</button>
+      </div>
     </form>
   );
 };

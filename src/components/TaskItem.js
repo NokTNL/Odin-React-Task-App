@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ResubmitForm from "./ResubmitForm";
+import "../style/TaskItem.css";
 
-const TaskItem = (props) => {
+export default function TaskItem(props) {
   const [isEditing, setIsEditing] = useState(false);
 
   const onDeleteTask = () => {
@@ -18,14 +19,16 @@ const TaskItem = (props) => {
   };
 
   return isEditing ? (
-    <ResubmitForm initialContent={props.task.content} onResubmit={onResubmit} />
+    <li className="task-item">
+      <ResubmitForm
+        initialContent={props.task.content}
+        onResubmit={onResubmit}
+      />
+    </li>
   ) : (
-    <li>
-      {props.task.content}
-      <button onClick={onEditTask}>Edit task</button>
-      <button onClick={onDeleteTask}>Delete task</button>
+    <li className="task-item" onClick={onEditTask}>
+      <p>{props.task.content || "(Empty)"}</p>
+      <button onClick={onDeleteTask}>－</button>
     </li>
   );
-};
-
-export default TaskItem;
+}

@@ -1,19 +1,18 @@
 import TaskItem from "./TaskItem";
+import "../style/Overview.css";
 
 const Overview = (props) => {
   return (
-    <div className="overview">
-      <ul>
-        {props.tasks.map((task) => (
-          <TaskItem
-            key={task.id}
-            task={task}
-            onDeleteTask={props.onDeleteTask}
-            onResubmit={props.onResubmit}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul className="overview">
+      {props.tasks.map((task) => (
+        <TaskItem
+          key={task.id}
+          task={task}
+          onDeleteTask={props.onDeleteTask}
+          onResubmit={props.onResubmit}
+        />
+      ))}
+    </ul>
   );
 };
 

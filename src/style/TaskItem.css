@@ -1,0 +1,20 @@
+.task-item {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.task-item p {
+  flex: 1;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 0;
+
+  padding: 1em 0;
+
+  font-size: 1.3rem;
+}
+
+.task-item p:hover {
+  background-color: #5590ba;
+}

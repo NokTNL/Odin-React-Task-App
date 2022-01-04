@@ -2,6 +2,7 @@ import { useState } from "react";
 import uniqid from "uniqid";
 import AddTaskForm from "./components/AddTaskForm";
 import Overview from "./components/Overview";
+import "./style/App.css";
 
 const TEMPLATE_TASKS = [
   { id: "1", content: "Sleep by 10pm" },
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>My To-do List</h1>
       <AddTaskForm onAddTask={onAddTask} />
       <Overview
         onDeleteTask={onDeleteTask}
