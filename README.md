@@ -7,4 +7,6 @@ Practicing props, states and list rendering in React. No styling.
 See the latest build: https://noktnl.github.io/Odin-React-Task-App/
 
 ### Features to be addded:
+- Only one item is allowed to be editied at one time
+- Add a button that cross out the task?
 - Add drag-and-drop feature to the to-do list
