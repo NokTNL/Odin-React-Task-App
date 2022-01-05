@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Odin-React-Task-App/static/css/main.51bebcd2.css",
-    "main.js": "/Odin-React-Task-App/static/js/main.c636cbf2.js",
+    "main.css": "/Odin-React-Task-App/static/css/main.86266438.css",
+    "main.js": "/Odin-React-Task-App/static/js/main.b9741ea1.js",
     "index.html": "/Odin-React-Task-App/index.html",
-    "main.51bebcd2.css.map": "/Odin-React-Task-App/static/css/main.51bebcd2.css.map",
-    "main.c636cbf2.js.map": "/Odin-React-Task-App/static/js/main.c636cbf2.js.map"
+    "main.86266438.css.map": "/Odin-React-Task-App/static/css/main.86266438.css.map",
+    "main.b9741ea1.js.map": "/Odin-React-Task-App/static/js/main.b9741ea1.js.map"
   },
   "entrypoints": [
-    "static/css/main.51bebcd2.css",
-    "static/js/main.c636cbf2.js"
+    "static/css/main.86266438.css",
+    "static/js/main.b9741ea1.js"
   ]
 }
