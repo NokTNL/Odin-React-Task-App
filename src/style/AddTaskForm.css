@@ -6,19 +6,21 @@
 
 .add-task-form h3 {
   text-align: left;
-  margin: 5px 0;
+  margin: 8px 0;
   font-size: 1.3em;
   font-weight: 700;
 }
 
 .add-task-form .input-submit-container {
   display: flex;
+  align-items: center;
 }
 
 .add-task-form input {
   flex: 1;
 }
 
-.add-task-form button {
-  margin-left: 25px;
+.add-task-form .symbol-button {
+  margin-left: 10px;
+  position: relative;
 }

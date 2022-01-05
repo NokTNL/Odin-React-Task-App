@@ -24,7 +24,7 @@ const AddTaskForm = (props) => {
           placeholder="Add a new task..."
           value={taskInput}
         />
-        <button>＋</button>
+        <button className="symbol-button">＋</button>
       </div>
     </form>
   );

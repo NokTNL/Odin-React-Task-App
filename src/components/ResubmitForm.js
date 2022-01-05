@@ -15,13 +15,13 @@ const ResubmitForm = (props) => {
   };
 
   return (
-    <form onSubmit={onResubmit}>
+    <form className="resubmit-form" onSubmit={onResubmit}>
       <input
         type="text"
         defaultValue={props.initialContent}
         onChange={onChangeContent}
       />
-      <button>✓</button>
+      <button className="symbol-button">✓</button>
     </form>
   );
 };

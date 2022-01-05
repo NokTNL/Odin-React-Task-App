@@ -8,11 +8,9 @@
   flex: 1;
   word-wrap: break-word;
   word-break: break-all;
-  margin: 0;
-
-  padding: 1em 0;
-
   font-size: 1.3rem;
+  margin: 0.4em 0;
+  padding: 0.4em 0;
 }
 
 .task-item p:hover {

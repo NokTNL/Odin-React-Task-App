@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ResubmitForm from "./ResubmitForm";
 import "../style/TaskItem.css";
+import "../style/ResubmitForm.css";
 
 export default function TaskItem(props) {
   const [isEditing, setIsEditing] = useState(false);
@@ -28,7 +29,9 @@ export default function TaskItem(props) {
   ) : (
     <li className="task-item" onClick={onEditTask}>
       <p>{props.task.content || "(Empty)"}</p>
-      <button onClick={onDeleteTask}>－</button>
+      <button className="symbol-button" onClick={onDeleteTask}>
+        －
+      </button>
     </li>
   );
 }
