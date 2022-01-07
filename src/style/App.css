@@ -35,7 +35,7 @@ body {
 
   /* push footer to the bottom */
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 1rem;
 }
 
