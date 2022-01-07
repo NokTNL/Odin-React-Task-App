@@ -8,7 +8,7 @@ For practicing props, states and list rendering in React. Styled in Plain CSS.
 
 ➡️ For latest styling updates, go to branch "task-app-styling"
 
-### Features to be addded:
+### Features to be added:
 
 - Only one item is allowed to be editied at one time
 - Add drag-and-drop feature to the to-do list
