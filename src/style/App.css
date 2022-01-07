@@ -1,19 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
+/* Full page backgroud color */
 body {
   background-color: #1e4f85;
 }
 
 .App {
-  min-height: 100vh;
-  max-width: 700px;
-  margin: 0 auto;
+  min-height: 95vh;
+  min-width: 200px;
+  max-width: 30rem; /* Or the elements inside can grow without bounds */
+  margin: 0 auto; /* centering */
+  padding: 0 3rem;
+  border: 0.3rem dotted #ecb835;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.App h1 {
+  font-family: "Josefin Slab", serif;
+  color: #ecb835;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2em;
+
+  margin: 4rem 0 1.2rem 0;
+}
+
+.App footer {
+  flex: 1;
+
+  /* push footer to the bottom */
+  display: flex;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.App footer span {
+  color: #ecb835;
+}
+
+.App footer svg {
+  font-size: 2rem;
+  color: white;
+  margin-right: 5rem;
+}
+
+/* Global CSS attributes --------------------------> */
+
+.App {
   font-family: "Josefin Sans", sans-serif;
   color: white;
 }
@@ -21,9 +59,10 @@ body {
 form input {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
-  padding: 0.4rem;
+  padding: 0.3rem 0.2rem 0.1rem 0.2rem;
+  min-width: 50px; /* otherwise will not shrink properly */
+  /****  Put something here to fix the input box clipping taller letter */
 }
-
 form input::placeholder {
   color: #9c9c9c;
 }
@@ -32,20 +71,15 @@ form input::placeholder {
   background-color: transparent;
 
   color: #85bae5;
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  border: 2px #85bae5 solid;
-  padding: 0px 4px;
-  border-radius: 20px;
+  border: none;
+
+  margin-left: 10px;
 
   cursor: pointer;
 }
 
-.App h1 {
-  font-family: "Josefin Slab", serif;
-  color: #ecb835;
-  font-size: 4rem;
-  font-weight: 700;
-  margin: 1em 0 0.3em 0;
+.symbol-button img {
+  width: 2rem;
 }
+
+/* --------------------------> End of Global CSS attributes  */

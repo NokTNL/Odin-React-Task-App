@@ -1,7 +1,6 @@
 .add-task-form {
-  box-sizing: border-box;
-  margin: 1em 2em;
-  width: 90%;
+  margin: 1em 0;
+  width: 88%;
 }
 
 .add-task-form h3 {
@@ -20,7 +19,8 @@
   flex: 1;
 }
 
-.add-task-form .symbol-button {
+.add-task-form .symbol-button img {
   margin-left: 10px;
   position: relative;
+  top: 0.07rem;
 }

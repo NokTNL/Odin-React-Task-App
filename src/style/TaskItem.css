@@ -1,16 +1,35 @@
+/*  Resubmit form --- should closely resembles .task-item */
+.resubmit-form {
+  display: flex;
+  align-items: center;
+  width: 100%; /* for flex-grow of inner elements to work properly */
+}
+
+.resubmit-form input {
+  flex: 1;
+  margin: 0.9rem 0 1.1rem 0; /* Take care of the global input field margin & padding */
+}
+
+/* Task item */
 .task-item {
   text-align: left;
+
   display: flex;
   align-items: center;
 }
 
 .task-item p {
   flex: 1;
-  word-wrap: break-word;
-  word-break: break-all;
+
   font-size: 1.3rem;
-  margin: 0.4em 0;
-  padding: 0.4em 0;
+  line-height: 1.2em;
+
+  margin: 0.6rem 0;
+  padding: 0.6rem 0;
+
+  /* To prevent overly long words from pushing the delete button away */
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .task-item p:hover {

@@ -1,19 +1,19 @@
 import TaskItem from "./TaskItem";
 import "../style/Overview.css";
 
-const Overview = (props) => {
+/***** Overview of task items ******/
+export default function Overview(props) {
   return (
     <ul className="overview">
-      {props.tasks.map((task) => (
+      {/* List of TaskItem's : */}
+      {props.tasks.map(task => (
         <TaskItem
           key={task.id}
           task={task}
-          onDeleteTask={props.onDeleteTask}
-          onResubmit={props.onResubmit}
+          onDeleteTask={props.onDeleteTask} // Pass onDeleteTask function downwards from App
+          onResubmit={props.onResubmit} // Pass onResubmit function downwards from App
         />
       ))}
     </ul>
   );
-};
-
-export default Overview;
+}
