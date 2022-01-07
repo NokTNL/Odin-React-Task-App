@@ -1,60 +1,69 @@
+// Libraries
 import { useState } from "react";
 import uniqid from "uniqid";
+// Components
 import AddTaskForm from "./components/AddTaskForm";
 import Overview from "./components/Overview";
+// Styling
+import "./style/App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+// Template tasks, for testing text overflow
 const TEMPLATE_TASKS = [
-  { id: "1", content: "Sleep by 10pm" },
-  { id: "2", content: "Make dinner" },
+  { id: "1", content: "Sleep by 10pm while finishing all my coding work" },
+  { id: "2", content: "Learn how to say 'Supercalifragilisticexpialidocious'" },
 ];
 
-function App() {
+export default function App() {
+  /***   Tasks state: stores the whole list of task ***/
   const [tasks, setTasks] = useState(TEMPLATE_TASKS);
   console.log(tasks);
 
-  const onDeleteTask = (deletingId) => {
-    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== deletingId));
-    /* Alternative: using splice() (Usually not preferred) 
-      const spliceIndex = prevTasks.findIndex((task) => task.id === deletingId);
-      const newTasks = [...prevTasks];
-      newTasks.splice(spliceIndex, 1);
-      return newTasks; 
-    }); */
+  /****  Event handlers *****/
+  const onDeleteTask = deletingId => {
+    setTasks(prevTasks => prevTasks.filter(task => task.id !== deletingId)); // Only retain tasks that has different id to the deleting one
   };
 
+  // Called when a task is modified
   const onResubmit = ({ modifiedTaskContent, editedId }) => {
-    setTasks((prevTasks) => {
-      return prevTasks.map((task) => {
-        if (task.id === editedId)
-          return { ...task, content: modifiedTaskContent };
-        else return task;
+    setTasks(prevTasks => {
+      const newTasks = prevTasks.map(task => {
+        if (task.id === editedId) {
+          return { ...task, content: modifiedTaskContent }; // copy that task then modify the content
+        } else return task;
       });
-      // This one should NOT be used, although it works. (...) only does shallow copy.
-      /* const editedIndex = prevTasks.findIndex((task) => task.id === editedId);
-      const newTasks = [...prevTasks];
-      newTasks[editedIndex].content = modifiedTaskContent; // This is mutating the object inside the state variable
-      return newTasks; */
+      return newTasks;
     });
   };
 
-  const onAddTask = (taskInput) => {
+  const onAddTask = taskInput => {
     const newTask = {
       id: uniqid(),
       content: taskInput,
     };
-    setTasks((prevTasks) => [...prevTasks, newTask]);
+    setTasks(prevTasks => [...prevTasks, newTask]);
   };
 
   return (
     <div className="App">
+      <h1>My To-do List :</h1>
       <AddTaskForm onAddTask={onAddTask} />
       <Overview
         onDeleteTask={onDeleteTask}
         onResubmit={onResubmit}
         tasks={tasks}
       />
+      <footer>
+        <a
+          href="https://github.com/NokTNL/Odin-React-Task-App"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <span>© 2021 by Tsz Nok Lam</span>
+      </footer>
     </div>
   );
 }
-
-export default App;
