@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Odin-React-Task-App/static/css/main.49b0421a.css",
+    "main.css": "/Odin-React-Task-App/static/css/main.dff59d42.css",
     "main.js": "/Odin-React-Task-App/static/js/main.1bec60cf.js",
     "static/media/submit-change.svg": "/Odin-React-Task-App/static/media/submit-change.85b62973d12b189e9104dd24bd974bc4.svg",
     "static/media/add-task.svg": "/Odin-React-Task-App/static/media/add-task.6af1183f160a5a2f2b8f9d07e63de943.svg",
     "index.html": "/Odin-React-Task-App/index.html",
     "static/media/delete-task.svg": "/Odin-React-Task-App/static/media/delete-task.60a9d81787087392076a7df4c2513cf1.svg",
-    "main.49b0421a.css.map": "/Odin-React-Task-App/static/css/main.49b0421a.css.map",
+    "main.dff59d42.css.map": "/Odin-React-Task-App/static/css/main.dff59d42.css.map",
     "main.1bec60cf.js.map": "/Odin-React-Task-App/static/js/main.1bec60cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b0421a.css",
+    "static/css/main.dff59d42.css",
     "static/js/main.1bec60cf.js"
   ]
 }
