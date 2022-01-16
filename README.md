@@ -12,5 +12,6 @@ For practicing props, states and list rendering in React. Styled in Plain CSS (a
 
 ### Features to be added:
 
+- Enable local storage to retain user information
 - Only one item is allowed to be editied at one time
 - Add drag-and-drop feature to the to-do list
