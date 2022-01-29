@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Task-App/static/css/main.dff59d42.css",
+    "main.css": "/React-Task-App/static/css/main.8fd65ad1.css",
     "main.js": "/React-Task-App/static/js/main.6e203ecd.js",
     "static/media/submit-change.svg": "/React-Task-App/static/media/submit-change.85b62973d12b189e9104dd24bd974bc4.svg",
     "static/media/add-task.svg": "/React-Task-App/static/media/add-task.6af1183f160a5a2f2b8f9d07e63de943.svg",
     "index.html": "/React-Task-App/index.html",
     "static/media/delete-task.svg": "/React-Task-App/static/media/delete-task.60a9d81787087392076a7df4c2513cf1.svg",
-    "main.dff59d42.css.map": "/React-Task-App/static/css/main.dff59d42.css.map",
+    "main.8fd65ad1.css.map": "/React-Task-App/static/css/main.8fd65ad1.css.map",
     "main.6e203ecd.js.map": "/React-Task-App/static/js/main.6e203ecd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff59d42.css",
+    "static/css/main.8fd65ad1.css",
     "static/js/main.6e203ecd.js"
   ]
 }
