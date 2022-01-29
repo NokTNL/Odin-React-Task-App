@@ -12,7 +12,7 @@ body {
   max-width: 30rem; /* Or the elements inside can grow without bounds */
   margin: 0 auto; /* centering */
   padding: 0 1.5rem;
-  border: 0.3rem dotted #ecb835;
+  border: 0.3rem solid #ecb835;
   border-radius: 2rem;
 
   display: flex;

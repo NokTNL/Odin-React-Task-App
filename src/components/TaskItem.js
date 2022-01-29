@@ -26,7 +26,7 @@ export default function TaskItem(props) {
   const onResubmit = event => {
     event.preventDefault();
     setIsEditing(false);
-    props.onResubmit({ modifiedTaskContent, editedId: props.task.id }); // Pass deletion to App
+    props.onResubmit({ modifiedTaskContent, editedId: props.task.id }); // Pass edit details to App
   };
 
   /**** Task deletion handling ****/

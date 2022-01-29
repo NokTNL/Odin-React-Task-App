@@ -2,7 +2,7 @@
   "name": "task-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://noktnl.github.io/Odin-React-Task-App/",
+  "homepage": "https://noktnl.github.io/React-Task-App/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
