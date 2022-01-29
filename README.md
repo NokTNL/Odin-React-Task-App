@@ -4,7 +4,7 @@
 
 For practicing props, states and list rendering in React. Styled in Plain CSS.
 
-➡️ See the latest build! https://noktnl.github.io/Odin-React-Task-App/
+➡️ See the latest build! https://noktnl.github.io/React-Task-App/
 
 ➡️ For latest styling updates, go to branch "task-app-styling"
 
