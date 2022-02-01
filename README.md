@@ -4,13 +4,14 @@
 ➡️ Live preview: https://noktnl.github.io/React-Task-App/
 
 ### Technical highlights
-- Structured with *React*. Practiced passing down props, lifting states up, list rendering & conditional rendering.
+- Structured with *React*
+  - Practised Passing down props, lifting states up, list rendering & conditional rendering.
+  - Used local storage & the "useEffect" hook to store and retrieve user input
 - Styled wth *plain CSS* (flexbox)
 
 
 ### Features to be added:
 
-- Enable local storage to retain user information
 - Only one item is allowed to be editied at one time
 - Add drag-and-drop feature to the to-do list
 - Introduce state management
